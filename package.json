@@ -1,0 +1,8 @@
+{
+  "name": "llmo",
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "tailwindcss": "latest"
+  }
+}
