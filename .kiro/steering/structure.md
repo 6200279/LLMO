@@ -34,9 +34,14 @@ LLMO/
 ### Backend Structure
 - **main.py**: FastAPI app initialization, CORS setup, route definitions
 - **services/**: Business logic separated by domain
-  - `llm_service.py`: OpenAI/Anthropic API interactions
-  - `web_scraper.py`: Website auditing and content analysis
-- **Pydantic Models**: Request/response schemas defined inline in main.py
+  - `llm_service.py`: OpenAI/Anthropic API interactions, prompt simulation
+  - `web_scraper.py`: Website auditing and content analysis with scoring
+  - `optimization_service.py`: Schema generation, content optimization
+  - `supabase_service.py`: Supabase database and auth operations
+- **models/**: Pydantic schemas for request/response validation
+- **database/**: Supabase client setup and query utilities
+- **auth/**: Authentication middleware and utilities
+- **Pydantic Models**: Request/response schemas, data validation
 - **Error Handling**: Try-catch blocks with descriptive error messages
 
 ### Frontend Structure  
